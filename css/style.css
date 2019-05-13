@@ -1,0 +1,1168 @@
+body {
+
+    margin: 0;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+
+}
+
+button, input[type="submit"] {
+
+    cursor: pointer;
+
+}
+
+.menu {
+
+    display: block;
+    position: fixed;
+    width: 25%;
+    height: 100%;
+    top: 0px;
+    right: 0px;
+
+    background-color: white;
+
+}
+
+.menu > .login {
+
+    display: block;
+    position: fixed;
+    width: 22%;
+    height: 15%;
+    top: 0px;
+    right: 0px;
+
+    background-color: rgb(255, 255, 255);
+
+    border: solid black;
+
+}
+
+.login > .raumButton {
+
+    position: relative;
+    width: 150px;
+    height: 35px;
+    left: 40px;
+    top: 45px;
+
+}
+
+.login > .tischButton {
+
+    position: relative;
+    width: 150px;
+    height: 35px;
+    left: 90px;
+    top: 45px;
+
+}
+
+.raumButton > h2, .tischButton > h2 {
+
+    margin: 0;
+
+}
+
+.menu > .view {
+
+    display: block;
+    position: fixed;
+    width: 22%;
+    height: 80%;
+    right: 0px;
+    bottom: 0px;
+
+    user-select: text;
+    -ms-user-select: text;
+    -moz-user-select: text;
+    -webkit-user-select: text;
+
+    background-color: rgb(255, 255, 255);
+
+    border: solid black;
+
+}
+
+.view > .teilnehmerName, .formView > .teilnehmerName {
+
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 10%;
+    right: 19px;
+    top: 30px;
+
+    background-color: #326a9c;
+
+}
+
+.view > .teilnehmerDatumVon, .formView > .teilnehmerDatumVon {
+    
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 10%;
+    right: 19px;
+    top: 130px;
+
+    background-color: #326a9c;
+    
+}
+
+.view > .teilnehmerDatumBis, .formView > .teilnehmerDatumBis {
+    
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 10%;
+    right: 19px;
+    top: 230px;
+    
+    background-color: #326a9c;
+    
+}
+
+.view > .teilnehmerKommentar, .formView > .teilnehmerKommentar {
+
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 20%;
+    right: 19px;
+    top: 330px;
+    background-color: #326a9c;
+
+}
+
+.formView > .teilnehmerRange {
+
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 20%;
+    right: 19px;
+    top: 510px;
+    background-color: #326a9c;
+
+}
+
+.teilnehmerRange > * {
+
+    margin: 0;
+
+}
+
+.formView > .teilnehmerSubmit, .formView > .raumSubmit {
+
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 6%;
+    right: 19px;
+    top: 690px;
+    background-color: #326a9c;
+
+}
+
+.formView > .raumName {
+
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 10%;
+    right: 19px;
+    top: 30px;
+    background-color: #326a9c;
+
+    color: white;
+
+}
+
+.formView > .raumSichtbarkeit {
+
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 10%;
+    right: 19px;
+    top: 130px;
+    background-color: #326a9c;
+
+    color: white;
+
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+
+}
+
+.raumSichtbarkeit > *, .tischPanel > * {
+
+    margin: auto;
+
+}
+
+.raumSichtbarkeit > input {
+
+    position: relative;
+    left: 20%;
+
+}
+
+
+.raumSichtbarkeit > label {
+
+    position: relative;
+    left: 25%;
+
+}
+
+.formView > .tischPanel {
+
+    display: block;
+    position: absolute;
+    width: 90%;
+    height: 20%;
+    right: 19px;
+    top: 230px;
+    background-color: #326a9c;
+
+    color: white;
+
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+
+}
+
+.tischPanel > .tischViewPanel {
+
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    height: 50%;
+
+    top: 5%;
+    left: 5%;
+
+    text-align: center;
+
+    margin: 0 5% 0 5%;
+
+    background-color: #28567e;
+
+}
+/* .tischPanel > .tischViewPanel:hover {
+
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    height: 50%;
+
+    top: 5%;
+    left: 5%;
+
+    text-align: center;
+
+    margin: 0 5% 0 5%;
+
+    background-color: #4a90ce;
+
+} */
+
+.tischPanel > .tischMinusButton {
+
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    height: 50%;
+
+    top: 5%;
+    left: 5%;
+
+    text-align: center;
+
+    margin: 0 5% 0 5%;
+
+    cursor: pointer;
+
+    background-color: #28567e;
+
+}
+.tischPanel > .tischMinusButton:hover {
+
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    height: 50%;
+
+    top: 5%;
+    left: 5%;
+
+    text-align: center;
+
+    margin: 0 5% 0 5%;
+
+    cursor: pointer;
+
+    background-color: #4a90ce;
+
+}
+
+.tischPanel > .tischPlusButton {
+
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    height: 50%;
+
+    top: 5%;
+    left: 5%;
+
+    text-align: center;
+
+    margin: 0 5% 0 5%;
+
+    cursor: pointer;
+
+    background-color: #28567e;
+
+}
+.tischPanel > .tischPlusButton:hover {
+
+    display: inline-block;
+    position: relative;
+    width: 20%;
+    height: 50%;
+
+    top: 5%;
+    left: 5%;
+
+    text-align: center;
+
+    margin: 0 5% 0 5%;
+
+    cursor: pointer;
+
+    background-color: #4a90ce;
+
+}
+
+.tischMinusButton > h1, .tischPlusButton > h1, .tischViewPanel > h1 {
+
+    position: absolute;
+    left: 23px;
+    top: -5px;
+
+}
+
+.teilnehmerName > h2, .teilnehmerDatumVon > h2, .teilnehmerDatumBis > h2, .teilnehmerKommentar > h2, .teilnehmerRange > h2, .raumName > h2, .raumSichtbarkeit > h2, .tischPanel > h2 {
+
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: 10px 0 0 0;
+
+    color: white;
+
+}
+
+.teilnehmerName > p, .teilnehmerDatumVon > p, .teilnehmerDatumBis > p, .raumName > p {
+
+    display: block;
+    position: relative;
+    text-align: center;
+    margin: 0;
+
+    font-size: 24px;
+
+    color: white;
+
+}
+
+.teilnehmerName > input { 
+
+    position: relative;
+
+    left: 10%;
+
+    text-align: center;
+    margin: 0;
+
+    font-size: 24px;
+
+}
+
+
+.teilnehmerDatumVon > input, .teilnehmerDatumBis > input {
+
+    position: relative;
+
+    left: 10%;
+
+    text-align: center;
+    margin: 0;
+
+    font-size: 24px;
+
+    width: 26%;
+
+}
+
+.teilnehmerKommentar > p {
+
+    display: block;
+    position: relative;
+
+    left: 10%;
+
+    margin: 0;
+
+    font-size: 24px;
+
+    color: white;
+
+}
+
+.teilnehmerKommentar > input {
+
+    display: block;
+    position: relative;
+    margin: auto;
+
+    font-size: 24px;
+
+}
+
+.teilnehmerRange > input {
+
+    position: relative;
+
+    width: 80%;
+    left: 10%;
+
+    text-align: center;
+
+    font-size: 24px;
+
+}
+
+.teilnehmerSubmit > input, .raumSubmit > input {
+
+    display: block;
+    position: relative;
+
+    top: 7px;
+
+    text-align: center;
+    margin: auto;
+
+    font-size: 24px;
+
+}
+
+.raum {
+
+    display: block;
+    position: absolute;
+    width: 5%;
+    height: 5%;
+    margin-top: 20px;
+    /* padding: 20px; */
+    cursor: pointer;
+
+
+    border: solid black;
+
+    background-color: red;
+
+}
+
+.zeigeRaum{
+
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    z-index: 1;
+
+    background-color: rgba(0, 0, 255, 0.5);
+
+}
+
+.zeigeRaum > .imRaum {
+
+    display: block;
+    position: absolute;
+    width: 1280px;
+    height: 820px;
+    left: 5%;
+    top: 5%;
+    margin-top: 20px;
+    /* padding: 20px; */
+    /* cursor: pointer; */
+    z-index: 2;
+
+    overflow: hidden;
+
+    border: solid;
+
+    background-color: rgb(255, 255, 255);
+
+}
+
+.imRaum > .tisch {
+
+    display: block;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    background-color: gray;
+    border: solid;
+
+    cursor: pointer;
+
+    font-size: 24px;
+
+}
+
+.tisch > p:first-child {
+
+    margin: 0;
+    font-size: 24px;
+    text-align: center;
+
+}
+
+.tisch > p{
+
+    margin: 0;
+    font-size: small;
+    text-align: center;
+
+}
+
+.imRaum > .tuer {
+
+    position: absolute;
+    width: 76px;
+    height: 76px;
+    border-radius: 0 0 0 55px;
+    
+    background: #037CA9;
+
+    z-index: 1;
+}
+
+.imRaum > .tuer::before{
+
+    content: "";
+    background: #fff;
+    width: 67px;
+    height: 67px;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    border-radius: 0 0 0 52px;
+
+}
+
+.zeigeRaum > .schliesseFenster {
+
+    color: white;
+    position: absolute;
+    top: 4px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Verdana, sans-serif;
+
+}
+
+.etage_1 > .zurueckOption, .etage_3 > .zurueckOption {
+
+    display: block;
+    position: absolute;
+    margin-top: 20px;
+    padding: 20px;
+    cursor: pointer;
+
+    margin: 0px;
+    padding: 0px;
+
+    bottom: 4px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+
+}
+
+.etagen, .etage_1, .etage_3 {
+
+    display: block;
+    position: absolute;
+    width: 75%;
+    height: 100%;
+    margin: 0;
+
+    background-color: rgb(255, 255, 255)
+}
+
+.etagen > .etage_1 {
+
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin-top: 20px;
+    margin-left: 150px;
+    padding: 20px;
+    float: left;
+    cursor: pointer;
+
+    border: solid black;
+
+    background-color: #326a9c;
+    color: #fff;
+
+}
+
+.etagen > .etage_1:hover {
+
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin-top: 20px;
+    margin-left: 150px;
+    padding: 20px;
+    float: left;
+    cursor: pointer;
+
+    border: solid black;
+
+    background-color: #4a90ce;
+    color: #fff;
+
+}
+
+.etagen > .etage_3 {
+
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin-top: 20px;
+    margin-right: 150px;
+    padding: 20px;
+    float: right;
+    cursor: pointer;
+
+    border: solid black;
+
+    background-color: #326a9c;
+    color: #fff;
+
+}
+
+.etagen > .etage_3:hover {
+
+    display: block;
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin-top: 20px;
+    margin-right: 150px;
+    padding: 20px;
+    float: right;
+    cursor: pointer;
+
+    border: solid black;
+
+    background-color: #4a90ce;
+    color: #fff;
+
+}
+
+.etage_1 > h1, .etage_3 > h1, .raum > h1 {
+
+    position: relative;
+    text-align: center;
+    /* top: 25px; */
+
+}
+
+.raum > p {
+
+    position: relative;
+    text-align: center;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.etage_1 > .raum1 {
+
+    margin-left: 50px;
+    left: 20px;
+    width: 140px;
+    height: 240px;
+    margin-right: 70px;
+    background-color: #326a9c;
+
+    color: #fff;
+
+}
+
+.etage_1 > .raum1:hover {
+
+    margin-left: 50px;
+    left: 20px;
+    width: 140px;
+    height: 240px;
+    margin-right: 70px;
+    background-color: #4a90ce;
+
+    color: #fff;
+
+}
+
+.etage_1 > .raum2 {
+
+    left: 286px;
+    width: 140px;
+    height: 240px;
+    margin-left: 70px;
+
+    background-color: #326a9c;
+
+    color: #fff;
+
+}
+.etage_1 > .raum2:hover {
+
+    left: 286px;
+    width: 140px;
+    height: 240px;
+    margin-left: 70px;
+
+    background-color: #4a90ce;
+
+    color: #fff;
+
+}
+.etage_1 > .raum3 {
+
+    left: 502px;
+    width: 140px;
+    height: 165px;
+    background-color: #326a9c;
+
+    color: #fff;
+
+}
+.etage_1 > .raum3:hover {
+
+    left: 502px;
+    width: 140px;
+    height: 165px;
+    background-color: #4a90ce;
+
+    color: #fff;
+
+}
+.etage_1 > .raum4 {
+
+    left: 648px;
+    width: 140px;
+    height: 240px;
+    background-color: #326a9c;
+
+    color: #fff;
+    
+}
+.etage_1 > .raum4:hover {
+
+    left: 648px;
+    width: 140px;
+    height: 240px;
+    background-color: #4a90ce;
+
+    color: #fff;
+    
+}
+.etage_1 > .raum5 {
+
+    left: 794px;
+    width: 140px;
+    height: 240px;
+    background-color: #326a9c;
+
+    color: #fff;
+
+}
+.etage_1 > .raum5:hover {
+
+    left: 794px;
+    width: 140px;
+    height: 240px;
+    background-color: #4a90ce;
+    
+    color: #fff;
+
+}
+.etage_1 > .raum6 {
+
+    left: 940px;
+    width: 140px;
+    height: 240px;
+    background-color: #326a9c;
+
+    color: #fff;
+
+}
+.etage_1 > .raum6:hover {
+
+    left: 940px;
+    width: 140px;
+    height: 240px;
+    background-color: #4a90ce;
+
+    color: #fff;
+
+}
+.etage_1 > .raum7 {
+
+    left: 1086px;
+    width: 140px;
+    height: 340px;
+    background-color: #326a9c;
+
+    color: #fff;
+
+}
+.etage_1 > .raum7:hover {
+
+    left: 1086px;
+    width: 140px;
+    height: 340px;
+    background-color: #4a90ce;
+
+    color: #fff;
+
+}
+.etage_1 > .raum8 {
+
+    left: 1232px;
+    width: 140px;
+    height: 240px;
+    background-color: #326a9c;
+
+    color: #fff;
+
+}
+.etage_1 > .raum8:hover {
+
+    left: 1232px;
+    width: 140px;
+    height: 240px;
+    background-color: #4a90ce;
+
+    color: #fff;
+
+}
+
+/* ------- next ------- */
+
+.etage_3 > .raum1 {
+
+    margin-left: 50px;
+    left: 20px;
+    width: 140px;
+    height: 140px;
+    background-color: #326a9c;
+
+    color: #fff;
+
+}
+.etage_3 > .raum1:hover {
+
+    margin-left: 50px;
+    left: 20px;
+    width: 140px;
+    height: 140px;
+    background-color: #4a90ce;
+
+    color: #fff;
+
+}
+.etage_3 > .raum2 {
+
+    left: 216px;
+    width: 140px;
+    height: 240px;
+    padding: 0px;
+    background-color: black;
+
+    color: #fff;
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%, 0 70%);
+
+}
+
+.raum2 > .raum2_2 {
+
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+    background-color: #326a9c;
+
+    color: #fff;
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%, 0 70%);
+
+}
+.raum2 > .raum2_2:hover {
+
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+
+    background-color: #4a90ce;
+
+    color: #fff;
+
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 60% 100%, 0 70%);
+
+}
+
+/* .etage_3 > .raum2 > h1 {
+
+    position: relative;
+
+} */
+
+.etage_3 > .raum3 {
+
+    left: 362px;
+    width: 140px;
+    height: 240px;
+    background-color: #326a9c;
+
+    color: #fff;
+
+}
+.etage_3 > .raum3:hover {
+
+    left: 362px;
+    width: 140px;
+    height: 240px;
+    background-color: #4a90ce;
+
+    color: #fff;
+
+}
+.etage_3 > .raum4 {
+
+    left: 508px;
+    width: 140px;
+    height: 240px;
+    background-color: #326a9c;
+
+    color: #fff;
+
+}
+.etage_3 > .raum4:hover {
+
+    left: 508px;
+    width: 140px;
+    height: 240px;
+    background-color: #4a90ce;
+
+    color: #fff;
+
+}
+.etage_3 > .raum5 {
+
+    left: 654px;
+    width: 140px;
+    height: 240px;
+    background-color: #326a9c;
+
+    color: #fff;
+
+}
+.etage_3 > .raum5:hover {
+
+    left: 654px;
+    width: 140px;
+    height: 240px;
+    background-color: #4a90ce;
+
+    color: #fff;
+
+}
+.etage_3 > .raum6 {
+
+    left: 800px;
+    width: 140px;
+    height: 240px;
+    background-color: #326a9c;
+
+    color: #fff;
+
+}
+.etage_3 > .raum6:hover {
+
+    left: 800px;
+    width: 140px;
+    height: 240px;
+    background-color: #4a90ce;
+
+    color: #fff;
+
+}
+.etage_3 > .raum7 {
+
+    left: 946px;
+    width: 140px;
+    height: 240px;
+    background-color: #326a9c;
+
+    color: #fff;
+
+}
+.etage_3 > .raum7:hover {
+
+    left: 946px;
+    width: 140px;
+    height: 240px;
+    background-color: #4a90ce;
+
+    color: #fff;
+
+}
+.etage_3 > .raum8 {
+
+    left: 1092px;
+    width: 140px;
+    height: 240px;
+    background-color: #326a9c;
+
+    color: #fff;
+
+}
+.etage_3 > .raum8:hover {
+
+    left: 1092px;
+    width: 140px;
+    height: 240px;
+    background-color: #4a90ce;
+
+    color: #fff;
+
+}
+.etage_3 > .raum9 {
+
+    left: 1238px;
+    width: 140px;
+    height: 140px;
+    background-color: #326a9c;
+
+    color: #fff;
+
+}
+.etage_3 > .raum9:hover {
+
+    left: 1238px;
+    width: 140px;
+    height: 140px;
+    background-color: #4a90ce;
+
+    color: #fff;
+
+}
+.etage_3 > .raum10 {
+
+    margin-left: 50px;
+    left: 20px;
+    top: 455px;
+    width: 140px;
+    height: 240px;
+    background-color: #326a9c;
+
+    color: #fff;
+
+}
+.etage_3 > .raum10:hover {
+
+    margin-left: 50px;
+    left: 20px;
+    top: 455px;
+    width: 140px;
+    height: 240px;
+    background-color: #4a90ce;
+
+    color: #fff;
+
+}
+.etage_3 > .raum11 {
+
+    top: 455px;
+    left: 362px;
+    width: 140px;
+    height: 240px;
+    background-color: #326a9c;
+
+    color: #fff;
+
+}
+.etage_3 > .raum11:hover {
+
+    top: 455px;
+    left: 362px;
+    width: 140px;
+    height: 240px;
+    background-color: #4a90ce;
+
+    color: #fff;
+
+}
+.etage_3 > .raum12 {
+
+    left: 508px;
+    top: 455px;
+    width: 140px;
+    height: 240px;
+    background-color: #326a9c;
+
+    color: #fff;
+
+}
+.etage_3 > .raum12:hover {
+
+    left: 508px;
+    top: 455px;
+    width: 140px;
+    height: 240px;
+    background-color: #4a90ce;
+
+    color: #fff;
+
+    text-color
+
+}
