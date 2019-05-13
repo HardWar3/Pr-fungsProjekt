@@ -1,6 +1,0 @@
--cp ../../hx
-
--D haxeJSON
-
--js ../../js/mainJS.js
--main Main
