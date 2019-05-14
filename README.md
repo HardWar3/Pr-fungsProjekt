@@ -1,4 +1,4 @@
-# Pr-fungsProjekt
+# PrüfungsProjekt
 Dieses Projekt ist mein IHK Prüfungs Projekt
 
 Ohne DB ist der aufruf der Webapplication nicht möglich
