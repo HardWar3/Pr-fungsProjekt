@@ -9,4 +9,4 @@ Gesagt sei dazu ich bin mir im klaren das es keine OOP Programmierung ist
 und das es auch nicht auf CleanCode zurückzuführen ist   
 
 
-Projekt stand: Fertig
+Projektstand: Fertig
