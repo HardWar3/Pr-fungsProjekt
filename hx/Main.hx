@@ -1,7 +1,7 @@
 package;
 
+//import js.html.Console;
 import js.Browser;
-import js.html.BodyElement;
 import js.html.Element;
 import pack.Etage;
 import pack.Datenbank;
@@ -12,7 +12,7 @@ class Main {
 
     static function main () : Void {
 
-        var bodyDerPade : BodyElement = Browser.document.body;
+        var bodyDerPade : Element = Browser.document.body;
 
         datenbankJson = untyped __js__( "datenbankJsonPage" );
 

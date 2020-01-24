@@ -1,7 +1,6 @@
 package pack;
 
 import js.Browser;
-import js.html.BodyElement;
 import js.html.Element;
 import js.html.HTMLCollection;
 import js.html.XMLHttpRequest;
@@ -11,7 +10,7 @@ import pack.Datenbank;
 
 class Raum {
 
-    static var bodyDerPage : BodyElement = Browser.document.body;
+    static var bodyDerPage : Element = Browser.document.body;
 
     public static function erstelleSpecialRaum () : Void {
 

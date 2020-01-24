@@ -2,12 +2,13 @@ package pack;
 
 import js.Browser;
 import js.html.Element;
+import js.Syntax;
 
 class Functions {
 
     public static function createElemente ( elementName : String ) : Element {
             
-        var istELementNameEinString : Bool = ( untyped __typeof__( elementName ) == 'string');
+        var istELementNameEinString : Bool = ( Syntax.typeof( elementName ) == 'string');
 
         if ( istELementNameEinString ){
         

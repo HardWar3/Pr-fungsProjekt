@@ -1,17 +1,15 @@
 package pack;
 
 import js.Browser;
-import js.html.BodyElement;
 import js.html.Element;
-
-import pack.Platz;
+import js.Syntax;
 import pack.Raum;
 import pack.Menu;
 import pack.Datenbank;
 
 class Etage {
 
-    static var bodyDerPage : BodyElement = Browser.document.body;
+    static var bodyDerPage : Element = Browser.document.body;
 
     static var nameDerEtage : String = "";
 
@@ -42,7 +40,7 @@ class Etage {
 
         }
 
-        var istEtageNameEinString : Bool = ( untyped __typeof__( etageName ) == 'string' );
+        var istEtageNameEinString : Bool = ( Syntax.typeof( etageName ) == 'string' );
 
         if ( istEtageNameEinString ) {
 

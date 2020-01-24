@@ -1,6 +1,5 @@
 package pack;
 
-import js.Browser;
 import js.html.XMLHttpRequest;
 
 //Datentype später in eine eigeneDatei machen

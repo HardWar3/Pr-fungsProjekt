@@ -1,14 +1,13 @@
 package pack;
 
 import js.Browser;
-import js.html.BodyElement;
 import js.html.Element;
-
+import js.Syntax;
 import pack.Etage;
 
 class Menu {
 
-    static var bodyDerPage : BodyElement = Browser.document.body;
+    static var bodyDerPage : Element = Browser.document.body;
     static var dieseEtage : String = "";
 
     public static function checkMenu () : Void {
@@ -42,7 +41,7 @@ class Menu {
 
     public static function zurueckZumHaubtMenu ( etage : String ) : Void {
 
-        var istEtageEinString : Bool = ( untyped __typeof__( etage ) == 'string' );
+        var istEtageEinString : Bool = ( Syntax.typeof( etage ) == 'string' );
 
         if ( istEtageEinString ) {
 

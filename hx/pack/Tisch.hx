@@ -1,8 +1,8 @@
 package pack;
 
 import js.Browser;
-import js.html.BodyElement;
 import js.html.Element;
+import js.Syntax;
 import js.html.HTMLCollection;
 import js.html.XMLHttpRequest;
 
@@ -10,7 +10,7 @@ import pack.Datenbank;
 
 class Tisch {
 
-    static var bodyDerPage : BodyElement = Browser.document.body;
+    static var bodyDerPage : Element = Browser.document.body;
 
     static var submitAction = null;
     static var submitBool : Bool = false;
@@ -73,7 +73,7 @@ class Tisch {
                     Platz.zeigDenPlatz( platzIndex );
                     Tisch.erstelleTischEditButton( platzIndex );
 
-                    var istSubmitActionNichtNull : Bool = untyped __typeof__( submitAction )  != null;
+                    var istSubmitActionNichtNull : Bool = Syntax.typeof( submitAction )  != null;
 
                     if ( istSubmitActionNichtNull && submitBool ) {
 
